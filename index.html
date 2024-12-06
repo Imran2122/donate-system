@@ -1,11 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Money for the people</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="width: 1400px; margin: 0 auto" class="container bg-[#F9F7F3]">
+    <header>
+      <div class="flex justify-between">
+        <button id="addBlog" class="btn btn-active btn-secondary px-10 py-2">
+          Blog
+        </button>
+        <div class="flex justify-center items-center gap-3">
+          <img src="./images/logo.png" alt="" srcset="" />
+          <h4>Donate Bangladesh</h4>
+        </div>
+
+        <!-- left button -->
+        <div class="flex justify-center items-center gap-3">
+          <img src="./images/coin.png" alt="" />
+          <p><span id="mainBalance"> 5500 </span> BDT</p>
+        </div>
+      </div>
+    </header>
+    <main class="mt-14">
+      <div class="flex items-center justify-center gap-4">
+        <button id="DonationButton" class="btn btn-active btn-secondary">
+          Donation
+        </button>
+        <button id="historyButton" class="btn">History</button>
+      </div>
+
+      <section id="donateHistory">
+        <!-- car one-start -->
+        <div>
+          <div class="hero bg-base-200 mt-8">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="./images/noakhali.png" class="rounded-lg shadow-2xl" />
+              <div>
+                <div class="flex gap-4">
+                  <img src="./images/coin.png" alt="" />
+                  <p>
+                    <span class="cart-balance" id="cartBalance1">0</span> BDT
+                  </p>
+                </div>
+                <h1 class="text-2xl font-bold">
+                  Donate for Flood at Noakhali, Bangladesh!
+                </h1>
+                <p class="py-6">
+                  The recent floods in Noakhali have caused significant damage
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+                </p>
+
+                <input
+                  type="text"
+                  id="inputValue1"
+                  class="input input-bordered w-full m-5"
+                  placeholder="Write Donation Amount"
+                />
+
+                <button id="" class="btn btn-primary flex w-full donate-button">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- car one-end -->
+        <!-- car two-start -->
+        <div>
+          <div class="hero bg-base-200 mt-8">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="./images/feni.png" class="rounded-lg shadow-2xl" />
+              <div>
+                <div class="flex gap-4">
+                  <img src="./images/coin.png" alt="" />
+                  <p>
+                    <span class="cart-balance" id="cartBalance2">0</span> BDT
+                  </p>
+                </div>
+                <h1 id="headingItem" class="text-2xl font-bold">
+                  Donate for Flood at Rajbari, Bangladesh!
+                </h1>
+                <p class="py-6">
+                  The recent floods in Noakhali have caused significant damage
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+                </p>
+
+                <input
+                  id="inputValue2"
+                  type="text"
+                  class="input input-bordered w-full m-5"
+                  placeholder="Write Donation Amount"
+                />
+
+                <button id="" class="btn btn-primary flex w-full donate-button">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- car one-end -->
+        <!-- car Three-start -->
+        <div>
+          <div class="hero bg-base-200 mt-8">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="./images/quota-protest.png"
+                class="rounded-lg shadow-2xl"
+              />
+              <div>
+                <div class="flex gap-4">
+                  <img src="./images/coin.png" alt="" />
+                  <p>
+                    <span class="cart-balance" id="cartBalance3">0</span> BDT
+                  </p>
+                </div>
+                <h1 class="text-2xl font-bold">
+                  Donate for Flood at Rajbari, Bangladesh!
+                </h1>
+                <p class="py-6">
+                  The recent floods in Noakhali have caused significant damage
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+                </p>
+
+                <input
+                  id="inputValue3"
+                  type="text"
+                  class="input input-bordered w-full m-5"
+                  placeholder="Write Donation Amount"
+                />
+
+                <button id="" class="btn btn-primary flex w-full donate-button">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- car one-end -->
+      </section>
+      <section class="mt-4">
+        <!-- history section -->
+        <div 
+          id="appendContent"
+          class="hidden"
+        ></div>
+      </section>
+
+      <!-- model section -->
+
+      <!-- You can open the modal using ID.showModal() method -->
+    </main>
+
+  
+    <script src="js/index3.js"></script>
+  </body>
 </html>
