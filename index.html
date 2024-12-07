@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body style="width: 1400px; margin: 0 auto" class="container bg-[#F9F7F3]">
-    <header>
+    <header class="container mx-auto py-4 bg-white shadow-md sticky top-0 z-50">
       <div class="flex justify-between">
         <button id="addBlog" class="btn btn-active btn-secondary px-10 py-2">
           Blog
@@ -30,16 +30,18 @@
       </div>
     </header>
     <main class="mt-14">
-      <div class="flex items-center justify-center gap-4">
-        <button id="DonationButton" class="btn btn-active btn-secondary">
-          Donation
-        </button>
-        <button id="historyButton" class="btn">History</button>
+      <div class="sticky top-28 bg-white shadow-md z-40">
+        <div class="flex items-center justify-center gap-4 ">
+          <button id="DonationButton" class="btn btn-active btn-secondary">
+            Donation
+          </button>
+          <button id="historyButton" class="btn">History</button>
+        </div>
       </div>
 
-      <section id="donateHistory">
+      <section class="sm:grid-cols-1" id="donateHistory">
         <!-- car one-start -->
-        <div>
+        <div >
           <div class="hero bg-base-200 mt-8">
             <div class="hero-content flex-col lg:flex-row">
               <img src="./images/noakhali.png" class="rounded-lg shadow-2xl" />
