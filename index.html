@@ -69,7 +69,11 @@
                   placeholder="Write Donation Amount"
                 />
 
-                <button id="" class="btn btn-primary flex w-full donate-button">
+                <button
+                  id=""
+                  class="btn btn-primary flex w-full donate-button"
+                  onclick="my_modal_4.showModal()"
+                >
                   Donate Now
                 </button>
               </div>
@@ -108,7 +112,10 @@
                   placeholder="Write Donation Amount"
                 />
 
-                <button id="" class="btn btn-primary flex w-full donate-button">
+                <button
+                  class="btn btn-primary flex w-full donate-button"
+                  onclick="my_modal_4.showModal()"
+                >
                   Donate Now
                 </button>
               </div>
@@ -150,7 +157,10 @@
                   placeholder="Write Donation Amount"
                 />
 
-                <button id="" class="btn btn-primary flex w-full donate-button">
+                <button
+                  class="btn btn-primary flex w-full donate-button"
+                  onclick="my_modal_4.showModal()"
+                >
                   Donate Now
                 </button>
               </div>
@@ -161,18 +171,31 @@
       </section>
       <section class="mt-4">
         <!-- history section -->
-        <div 
-          id="appendContent"
-          class="hidden"
-        ></div>
+        <div id="appendContent" class="hidden"></div>
       </section>
 
       <!-- model section -->
+      
+      <dialog id="my_modal_4" class="modal">
+        <div
+          class="modal-box w-11/12 flex justify-center items-center flex-col"
+        >
+          <h3 class="text-lg font-bold">Congratulation</h3>
+
+          <img class="" src="./images/coin.png" alt="" />
+          <p class="py-4">You are Donate for humanity</p>
+          <h4>Successfully</h4>
+          <div class="modal-action flex justify-center items-center">
+            <button class="btn btn-error" onclick="my_modal_4.close()">
+              Close Confirmation
+            </button>
+          </div>
+        </div>
+      </dialog>
 
       <!-- You can open the modal using ID.showModal() method -->
     </main>
 
-  
-    <script src="js/index3.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
